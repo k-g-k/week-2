@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Javascript 101</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fontastic.s3.amazonaws.com/XuV4x8wGVcn7TpW3kJUHjc/icons.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- ***** CALCULATOR ****** -->
+
+  <div class="calculator">
+
+  <h1>Compute something awesome</h1>
+  <div class="calculate-two-values">
+
+    <div>
+
+      <input class="calculator-inputs"  type="text" onchange="setX(this.value)">
+
+      <input class="calculator-inputs" type="text" onchange="setY(this.value)">
+
+    </div>
+
+    <div class="calculator-buttons">
+
+      <button onclick="add()">+</button>
+
+      <button onclick="subtract()">-</button>
+
+      <button onclick="multiply()">&times;</button>
+
+      <button onclick="divide()">&divide;</button>
+
+      <button onclick="mod()">%</button>
+
+  </div>
+
+  <h2 class="calc-two-result">___</h2>
+
+  </div>
+
+  <div class="calculate-three-values">
+
+    <div>
+
+      <input class="calculator-inputs" type="text" onchange="setX(this.value)">
+
+      <input class="calculator-inputs" type="text" onchange="setY(this.value)">
+
+      <input class="calculator-inputs" type="text" onchange="setZ(this.value)">
+
+    </div>
+
+    <div class="calculator-buttons">
+
+      <button onclick="add3()">+</button>
+
+      <button onclick="subtract3()">-</button>
+
+      <button onclick="multiply3()">&times;</button>
+
+      <button onclick="divide3()">&divide;</button>
+
+    </div>
+
+    <h2 class="calc-three-result">___</h2>
+
+  </div>
+
+
+</div>
+
+
+<!-- ***** GUESSING GAME ***** -->
+
+
+<div class="guessing-game">
+
+
+
+  <h1>Guess a number from 1 - 10</h1>
+
+  <h2 class="guess-result"></h2>
+
+  <p>
+    <input type="text" onchange="setGuess(this.value)">
+  </p>
+  <p>
+    <button onclick="choose()">Guess!</button>
+  </p>
+
+
+</div>
+
+
+<!-- ***** CONVERTER ****** -->
+
+<div class="converter">
+
+  <h1>Convert Things</h1>
+
+  <div class="cups-and-quarts">
+
+    <p><input type="text" onchange="setVol(this.value)"></p>
+
+    <p>
+      <button onclick="convertCups()">Cups to Quarts</button>
+      <button onclick="convertQuarts()">Quarts to Cups</button>
+    </p>
+
+    <h2 class="vol-convert-result"></h2>
+
+  </div>
+
+  <div class="meters-and-yards">
+
+    <p><input type="text" onchange="setDist(this.value)"></p>
+
+    <p>
+      <button onclick="convertMeters()">Meters to Yards</button>
+      <button onclick="convertYards()">Yards to Meters</button>
+    </p>
+
+    <h2 class="dist-convert-result"></h2>
+
+</div>
+
+<div class="temperature">
+
+  <p><input type="text" onchange="setTemp(this.value)"></p>
+
+  <p>
+    <button onclick="convertCelcius()">Celcius to Fahrenheit</button>
+    <button onclick="convertFahrenheit()">Fahrenheit to Celcius</button>
+  </p>
+
+  <h2 class="temp-convert-result"></h2>
+
+</div>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
